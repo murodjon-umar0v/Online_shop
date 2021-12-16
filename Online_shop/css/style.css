@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+::selection {
+    background: rgba(255, 0, 0, 0.384);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    transition: .5s ease;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F5F5F5;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 11vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #CE0119;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 10px 5px #1190cb18;
+    z-index: 999;
+}
+
+header nav {
+    width: 80%;
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    height: 50px;
+    background: #ffffff;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px #fff;
+}
+
+ul li:hover {
+    background: #1190CB;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px 100px 100px;
+    color: #ffffff;
+    background: url(../images/main-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .info,
+main .image {
+    position: relative;
+    width: 40%;
+    margin: 50px auto 0;
+    height: 200px;
+}
+
+main .image img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    transform: scale(2) rotate(10deg);
+}
+
+.btn {
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#comfort {
+    padding: 100px 0;
+}
+
+#comfort .content {
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #1190CB;
+}
+
+#comfort .content div {
+    width: 33.3%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+#comfort .content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#comfort .content div h3 {
+    padding: 10px;
+}
+
+#comfort .content div:hover img {
+    transform: scale(1.3) rotate(-26deg);
+}
+
+#comfort .content div:hover h3 {
+    transform: translate(10px);
+}
+
+#comfort .content div:nth-child(even) {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+#reklama {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: #CE0119;
+    color: #F5F5F5;
+    margin: 30px 0;
+}
+
+#reklama .content {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reklama .content video,
+#reklama .content img {
+    height: 100%;
+}
+
+#reklama .content video {
+    padding: 20px 0;
+}
+
+.iPad {
+    height: 90% !important;
+    align-self: flex-end;
+}
+
+#reklama .content .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reklama .content .text span {
+    color: gold;
+}
+
+#product {
+    padding: 65px 0 0 0;
+}
+
+#product .content {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#product .content .sale {
+    line-height: 30px;
+    padding: 30px;
+    background: #fff;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 0 10px 10px #1190cb18;
+    text-align: center;
+    overflow: hidden;
+}
+
+#product .content .sale img {
+    width: 100%;
+    display: block;
+    margin: 10px auto 30px;
+    cursor: pointer;
+}
+
+.phone {
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phone div {
+    position: relative;
+    width: 33.3%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid #F5F5F5
+}
+
+.phone div span {
+    color: gold;
+}
+
+.phone div img {
+    height: 70%;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#saleOne {
+    position: relative;
+    width: 100%;
+    height: 47vh;
+    background: #CE0119;
+    border: 1px solid red;
+}
+
+#saleOne svg:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+}
+
+#saleOne svg:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotatex(180deg);
+}
+
+#saleOne img {
+    height: 100%;
+}
+
+
+
+form {
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px solid #666;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+}
+
+input,
+textarea {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+input:nth-child(2),
+input:nth-child(3) {
+    width: 49%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: #CE0119;
+    border: none;
+    color: #ffffff;
+}
+
+#product .content .phone img {
+    width: 100%;
+}
+
+#sale {
+    padding: 100px 0;
+
+}
+
+#sale .content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#sale h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.prod {
+    padding: 10px;
+    position: relative;
+    margin: 10px 0;
+    width: 24%;
+    height: 150px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 8px 0 rgba(85, 85, 85, 0.507);
+}
+
+.prod img {
+    height: 100%;
+}
+
+.prod .text {
+    width: 50%;
+}
+
+.prod .text h3 {
+    line-height: 32px;
+}
+
+.prod p {
+    line-height: 25px;
+}
+
+.prise {
+    width: 45%;
+}
+
+#reklama {
+    text-align: center;
+}
+
+#reklama .text h2 {
+    line-height: 50px;
+    color: gold;
+}
+
+#reklama .content .btn {
+    display: none;
+    margin-top: 30px;
+}
+
+#reklama .content .text .btn {
+    display: block;
+}
+
+.btn {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0 0 0;
+    background: #CE0119;
+    background-size: cover;
+    background-position: top center;
+}
+
+footer .developer {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+footer .developer a,
+footer a {
+    color: gold;
+    transition: .5s ease;
+}
+
+footer a:active {
+    color: #fff;
+    transition: 0s;
+}
+
+footer .developer a:hover,
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .developer a::before,
+footer .developer a::after {
+    content: "<";
+    color: whitesmoke;
+    padding: 0 5px;
+    text-decoration-color: #CE0119;
+}
+
+footer .developer a::after {
+    content: ">";
+    text-decoration-color: #CE0119;
+}
+
+footer .foot {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: gold;
+    padding-bottom: 30px;
+}
+
+footer .foot h2 {
+    color: gold;
+    padding-bottom: 20px;
+}
+
+.address {
+    padding-top: 20px;
+}
+
+footer .foot hr {
+    width: 50%;
+    margin: auto;
+    border: 1px dashed white;
+}
+
+footer .foot h4 {
+    line-height: 30px;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials i {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 1px solid gold;
+}
+
+.socials i:hover {
+    background: gold;
+    border: 1px solid gold;
+    color: #CE0119;
+    transform: scale(.8);
+}
+
+
+.sale-text {
+    height: auto;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #CE0119;
+    color: white;
+    padding: 10px;
+    transform: rotate(10deg);
+}
+
+#comfort i {
+    font-size: 42px;
+    color: #CE0119;
+}
+
+.tv-sale {
+    position: absolute;
+    top: 25px;
+    right: -50px;
+    background: #CE0119;
+    color: #fff;
+    padding: 5px 60px;
+    transform: rotate(45deg);
+}
+
+.icon-top {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(255, 217, 0, 0.281);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.icon-top i {
+    font-size: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border: .1px solid #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1190CB;
+    border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+    #comfort .content {
+        width: 80%;
+        padding: 0 !important;
+    }
+
+    #comfort .content div:nth-child(5),
+    #comfort .content div:last-child {
+        display: none;
+    }
+
+    #comfort .content div {
+        width: 50%;
+    }
+
+    #comfort .content div p {
+        font-size: 14px;
+    }
+
+    #comfort .content div:nth-child(3) {
+        order: 1;
+    }
+
+    #product .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #reklama .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #reklama {
+        padding: 50px;
+        height: auto;
+    }
+
+    #reklama .content video,
+    #reklama .content img {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #reklama .content div {
+        width: 100%;
+    }
+
+    #product .content .phone {
+        width: 100%;
+        position: relative;
+    }
+
+    #product .content .phone img {
+        width: 100%;
+    }
+
+    #product {
+        height: auto;
+    }
+
+    #product .content {
+        padding: 10px;
+    }
+
+    #product .content .sale {
+        width: 70%;
+    }
+
+    header li {
+        font-size: 12px;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    main {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sale h2 {
+        font-size: 17px;
+    }
+
+    .sale p {
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .info h2 {
+        font-size: 17px;
+    }
+
+    .phone div:first-child,
+    .phone div:last-child {
+        display: none;
+    }
+
+    .phone div {
+        width: 50%;
+
+    }
+
+    #sale .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .prod {
+        width: 95%;
+        margin: 10px auto;
+        justify-content: space-around;
+    }
+
+    .prise {
+        width: 100%;
+    }
+
+    #reklama .content .btn {
+        display: block;
+    }
+
+    #reklama .content .text .btn {
+        display: none;
+    }
+}
